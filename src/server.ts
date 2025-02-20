@@ -11,6 +11,7 @@ app.use(express.json());
 
 // We define our first route
 app.use("/api/weather", weatherRoute);
+app.use("/api/weather/multiple", weatherRoute);
 
 // Start the express server
 app.listen(PORT, () => {

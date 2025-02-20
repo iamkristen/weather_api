@@ -25,3 +25,25 @@ export const generateDublinWeatherData = (): WeatherData => {
   // Return weather data
   return generatedWeatherData;
 };
+
+export const generateEdinburghWeatherData = (): WeatherData => {
+  const generateEdinburghWeatherData: WeatherData = {
+    temperature: faker.number.int({ min: -10, max: 20 }),
+    humidity: faker.number.int({ min: 65, max: 86 }),
+    wind: faker.number.int({ min: 3, max: 45 }),
+    rain: faker.number.int({ min: 23, max: 67 }),
+  };
+
+  return generateEdinburghWeatherData;
+};
+
+export const generateParisWeatherData = (): WeatherData => {
+  const generateParisWeatherData: WeatherData = {
+    temperature: faker.number.int({ min: -8, max: 24 }),
+    humidity: faker.number.int({ min: 46, max: 98 }),
+    wind: faker.number.int({ min: 6, max: 99 }),
+    rain: faker.number.int({ min: 45, max: 67 }),
+  };
+
+  return generateParisWeatherData;
+}
